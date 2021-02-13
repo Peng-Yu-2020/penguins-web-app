@@ -11,10 +11,8 @@ This app predicts the **Palmer Penguin** species!
 
 """)
 
-st.sidebar.header('User Input Features')
+st.sidebar.header('Input your features')
 
-
-# Collects user input features into dataframe
 uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["csv"])
 if uploaded_file is not None:
     input_df = pd.read_csv(uploaded_file)
