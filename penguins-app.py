@@ -3,6 +3,14 @@ import pandas as pd
 import numpy as np
 import pickle
 from sklearn.ensemble import RandomForestClassifier
+from PIL import Image
+image1 = Image.open('penguins-1.jpg')
+image2 = Image.open('penguins-2.jpg')
+
+st.image(image1, use_column_width=True)
+
+
+
 
 st.write("""
 # Penguin Prediction App
